@@ -30,7 +30,7 @@ This program presents a new approach to the projectile mark detecting system. Th
 
 <img align="center" width="800" alt="도식화" src="https://user-images.githubusercontent.com/77319785/196273713-43df42f2-068c-4285-ab9c-fec79f087b1b.png">
 
-## Environment Settings
+## ~Environment Settings~ -> Technologies used
 
 | Division        | Stack                                                                                                                                                                                                                                                                                                                             |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -41,3 +41,98 @@ This program presents a new approach to the projectile mark detecting system. Th
 | Computer Vison  | <img src="https://img.shields.io/badge/OpenCV-purple?style=for-the-badge&logo=OpenCV&logoColor=5C3EE8"/> <img src="https://img.shields.io/badge/Python-skyblue?style=for-the-badge&logo=Python&logoColor=3776AB"/>                                                                                                                |
 | IoT             | <img src="https://img.shields.io/badge/Raspberry Pi-red?style=for-the-badge&logo=Raspberry Pi&logoColor=A22846">                                                                                                                                                                                                                  |
 | Deep Learning   | <img src="https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=Python&logoColor=3776AB"/> <img src="https://img.shields.io/badge/Pytorch-Gray?style=for-the-badge&logo=Pytorch&logoColor=EE4C2C"/>                                                                                                                   |
+
+## Environment
+
+### Raspberry pi 1 (For camera)
+- This Raspberry pi is placed near by target.
+
+- Raspberry pi model : Raspberry pi 4B 8G RAM
+
+- LoRa Hat : Waveshare SX1262 915M LoRa HAT(915M model is for USA)
+
+- Camera : Raspberry pi HQ Camera
+
+- OS : Raspberry pi OS 64bit (Raspbian)
+
+- Language : Python(3.7.xx), Node.js(14.xx)
+
+
+**Camera Setting**
+
+1. put camera into Raspberry pi
+2. After turn on Raspberry pi, Menu -> Preferences -> Raspberry pi configuration -> Interfaces -> select `Camera : Enable`
+
+**LoRa Hat Setting**
+
+1. Set the LoRa mode using jumpers
+  - Using the Yellow jumpers on photo, place the jumper like photo.
+
+2. Enable Serial port
+  - In terminal, run command `sudo raspi-config` -> Interfacing Options -> Serial -> No -> Yes
+
+**LoRa Setting**
+
+- **Before you read, you should make a directory for setting and all cloned files/directories must be in that directory.**
+
+1. Install Python version 3.7.xx and Node.js version 14.xx
+
+2. clone the LoRa code from Github.
+
+```
+git clone https://github.com/Purdue-K-SW-Capstone/SharpShooter-pi1
+```
+
+3. change working directory
+```
+cd SharpShooter-pi1
+```
+
+4. Install python dependencies
+```
+pip install -r requirements.txt
+```
+
+5. 
+
+
+
+### Raspberry pi 2 (For sound sensor)
+- This Raspberry pi is placed near by shooter.
+
+- Raspberry pi model : Raspberry pi 4B 8G RAM
+
+- LoRa Hat : Waveshare SX1262 915M LoRa HAT(915M model is for USA)
+
+- Microphone : 
+
+- OS : Raspberry pi OS 64bit (Raspbian)
+
+- Language : Python(3.7.xx), Node.js(14.xx)
+
+**Access Point(Wifi generator) Setting**
+
+
+
+**LoRa Hat Setting**
+
+1. Set the LoRa mode using jumpers
+  - Using the Yellow jumpers on photo, place the jumper like photo.
+
+2. Enable Serial port
+  - In terminal, run command `sudo raspi-config` -> Interfacing Options -> Serial -> No -> Yes
+
+**LoRa Setting**
+- **Before you read, you should make a directory for setting and all cloned files/directories must be in that directory.**
+- In LoRa, There are many secret keys. so, If you want to set the LoRa, Please ask us to get `.env`file.
+- `.env`file must be placed on root directory(SharpShooter-pi2 directory)
+
+**Server setting**
+- Server is made with node.js.
+- In server, There are many secret keys. so, If you want to set the server, Please ask us to get `.env`file.
+- `.env`file must be placed on root directory(SharpShooter-Server directory)
+
+**Client server setting**
+- Client server is made with react.
+- In client server, There are many secret keys. so, If you want to set the client server, Please ask us to get `.env`file.
+- `.env`file must be placed on root directory(SharpShooter-Front directory)
