@@ -53,10 +53,11 @@ This program presents a new approach to the projectile mark detecting system. Th
 
 - Camera : Raspberry pi HQ Camera
 
-- OS : Raspberry pi OS 64bit (Raspbian)
+- OS : Raspberry pi OS 64bit(Raspbian)
 
-- Language : Python(3.7.xx), Node.js(14.xx)
+- Language : Python(3.9.2)
 
+- **Before you read, you should make a directory for setting and all cloned files/directories must be in that directory.**
 
 **Camera Setting**
 
@@ -67,19 +68,18 @@ This program presents a new approach to the projectile mark detecting system. Th
 
 1. Set the LoRa mode using jumpers
   - Using the Yellow jumpers on photo, place the jumper like photo.
+  <img width="474" alt="LoRa hat" src="https://user-images.githubusercontent.com/27190776/208315417-e3962ef9-8917-48e3-ab4b-d9282e87832e.png">
 
 2. Enable Serial port
   - In terminal, run command `sudo raspi-config` -> Interfacing Options -> Serial -> No -> Yes
 
 **LoRa Setting**
 
-- **Before you read, you should make a directory for setting and all cloned files/directories must be in that directory.**
+1. Install Python version 3.9.2
 
-1. Install Python version 3.7.xx and Node.js version 14.xx
+2. clone the LoRa(pi1) code from Github.
 
-2. clone the LoRa code from Github.
-
-```
+```linux
 git clone https://github.com/Purdue-K-SW-Capstone/SharpShooter-pi1
 ```
 
@@ -93,8 +93,10 @@ cd SharpShooter-pi1
 pip install -r requirements.txt
 ```
 
-5. 
-
+5. Run
+```
+python main.py
+```
 
 
 ### Raspberry pi 2 (For sound sensor)
@@ -104,11 +106,18 @@ pip install -r requirements.txt
 
 - LoRa Hat : Waveshare SX1262 915M LoRa HAT(915M model is for USA)
 
-- Microphone : 
+- Microphone : HP-DK40(SIZHENG)
 
-- OS : Raspberry pi OS 64bit (Raspbian)
+- OS : Raspberry pi OS 64bit(Raspbian)
 
-- Language : Python(3.7.xx), Node.js(14.xx)
+- Language : Python(3.7.15), Node.js(16.17.1)
+
+- **Before you read, you should make a directory for setting and all cloned files/directories must be in that directory.**
+
+- **Every setting must be run in separate terminal window
+
+**Microphone setting**
+- just put microphone into Raspberry pi
 
 **Access Point(Wifi generator) Setting**
 
@@ -118,21 +127,90 @@ pip install -r requirements.txt
 
 1. Set the LoRa mode using jumpers
   - Using the Yellow jumpers on photo, place the jumper like photo.
+  <img width="474" alt="LoRa hat" src="https://user-images.githubusercontent.com/27190776/208315417-e3962ef9-8917-48e3-ab4b-d9282e87832e.png">
 
 2. Enable Serial port
   - In terminal, run command `sudo raspi-config` -> Interfacing Options -> Serial -> No -> Yes
-
-**LoRa Setting**
-- **Before you read, you should make a directory for setting and all cloned files/directories must be in that directory.**
-- In LoRa, There are many secret keys. so, If you want to set the LoRa, Please ask us to get `.env`file.
-- `.env`file must be placed on root directory(SharpShooter-pi2 directory)
 
 **Server setting**
 - Server is made with node.js.
 - In server, There are many secret keys. so, If you want to set the server, Please ask us to get `.env`file.
 - `.env`file must be placed on root directory(SharpShooter-Server directory)
 
+1. Install node.js version 16.17.1
+
+2. clone the server code from Github
+```
+git clone https://github.com/Purdue-K-SW-Capstone/SharpShooter-Server
+```
+
+3. change working directory
+```
+cd SharpShooter-Server
+```
+
+4. Install node.js dependencies
+```
+npm install
+```
+
+5. Run
+```
+npm start
+```
+
+**LoRa Setting**
+- In LoRa, There are many secret keys. so, If you want to set the LoRa, Please ask us to get `.env`file.
+- `.env`file must be placed on root directory(SharpShooter-pi2 directory)
+- Before setting this, You must finish Server setting first.
+
+1. Install python version 3.7.15
+
+2. clone the LoRa(pi2) code from Github
+```
+git clone https://github.com/Purdue-K-SW-Capstone/SharpShooter-pi2
+```
+
+3. change working directory
+```
+cd SharpShooter-pi2
+```
+
+4. Install python dependencies
+```
+pip install -r requirements.txt
+```
+
+5. Run
+```
+python main.py
+```
+
 **Client server setting**
 - Client server is made with react.
 - In client server, There are many secret keys. so, If you want to set the client server, Please ask us to get `.env`file.
 - `.env`file must be placed on root directory(SharpShooter-Front directory)
+- Before setting this, You must finish Server setting first.
+
+1. Install node.js version 16.17.1
+
+2. clone the front code from Github
+```
+git clone https://github.com/Purdue-K-SW-Capstone/SharpShooter-Front
+```
+
+3. change working directory
+```
+cd SharpShooter-Front
+```
+
+4. Install node.js dependencies
+```
+npm install
+```
+
+5. Run
+```
+npm start
+```
+
