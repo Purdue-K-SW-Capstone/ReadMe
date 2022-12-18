@@ -98,6 +98,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
+---
 
 ### Raspberry pi 2 (For sound sensor)
 - This Raspberry pi is placed near by shooter.
