@@ -242,25 +242,32 @@ SharpShooter-Front/src/components/InfoModal.jsx
 
 1. Install node.js version 16.17.1
 
-2. clone the server code from Github
+
+2. go to sharpshooter folder
 
 ```
-git clone https://github.com/Purdue-K-SW-Capstone/SharpShooter-Server
+cd SharpShooter
 ```
 
-3. change working directory
+3. change to sharpshooter code folder
+
+```
+cd code
+```
+
+4. change working directory
 
 ```
 cd SharpShooter-Server
 ```
 
-4. Install node.js dependencies
+5. Install node.js dependencies
 
 ```
 npm install
 ```
 
-5. Run
+6. Run
 
 ```
 npm start
@@ -272,25 +279,32 @@ npm start
 
 1. Install python version 3.7.15
 
-2. clone the LoRa(pi2) code from Github
+
+2. change to sharpshooter folder
 
 ```
-git clone https://github.com/Purdue-K-SW-Capstone/SharpShooter-pi2
+cd SharpShooter
 ```
 
-3. change working directory
+3. change to sharpshooter code folder
+
+```
+cd code
+```
+
+4. change working directory
 
 ```
 cd SharpShooter-pi2
 ```
 
-4. Install python dependencies
+5. Install python dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-5. Run
+6. Run
 
 ```
 python main.py
@@ -303,25 +317,32 @@ python main.py
 
 1. Install node.js version 16.17.1
 
-2. clone the front code from Github
+
+2. change to sharpshooter folder
 
 ```
-git clone https://github.com/Purdue-K-SW-Capstone/SharpShooter-Front
+cd SharpShooter
 ```
 
-3. change working directory
+3. change to sharpshooter code folder
+
+```
+cd code
+```
+
+4. change working directory
 
 ```
 cd SharpShooter-Front
 ```
 
-4. Install node.js dependencies
+5. Install node.js dependencies
 
 ```
 npm install
 ```
 
-5. Run
+6. Run
 
 ```
 npm start
