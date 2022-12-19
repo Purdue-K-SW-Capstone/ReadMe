@@ -24,7 +24,7 @@ Shotmarker is a program designed for a F-class shooting competition, which is co
 
 ## Novelty
 
-This program presents a new approach to the projectile mark detecting system. The proposed system shows high accuracy without any environmental constraints by using LoRa, Computer Vision and sound detection.  Compared to ShotMarker, this system has a high  target tracking accuracy. Also, unlike ShotSpotter, the proposed module starts only when a gun shot sound is detected; this method is also cost-effective. Therefore, the gunshot detection system that derives high accuracy is developed by this program. In this program, the proposed system applies the handshaking algorithm to ensure that transferring data is successful. Moreover, the LoRa protocol was used to remove packet loss, and the latency of image transmission was lowered. It also has flexibility applicable to regardless to bullets and targets. However, transmitting large data using LoRa, takes a while due to low power. To solve this problem, this system transmits only coordinates, instead of an image or video.
+This program presents a new approach to the projectile mark detecting system. The proposed system shows high accuracy without any environmental constraints by using LoRa, Computer Vision and sound detection. Compared to ShotMarker, this system has a high target tracking accuracy. Also, unlike ShotSpotter, the proposed module starts only when a gun shot sound is detected; this method is also cost-effective. Therefore, the gunshot detection system that derives high accuracy is developed by this program. In this program, the proposed system applies the handshaking algorithm to ensure that transferring data is successful. Moreover, the LoRa protocol was used to remove packet loss, and the latency of image transmission was lowered. It also has flexibility applicable to regardless to bullets and targets. However, transmitting large data using LoRa, takes a while due to low power. To solve this problem, this system transmits only coordinates, instead of an image or video.
 
 ## Project Overview
 
@@ -43,6 +43,12 @@ This program presents a new approach to the projectile mark detecting system. Th
 | Deep Learning   | <img src="https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=Python&logoColor=3776AB"/> <img src="https://img.shields.io/badge/Pytorch-Gray?style=for-the-badge&logo=Pytorch&logoColor=EE4C2C"/>                                                                                                                   |
 
 ## Environment
+
+- **Before Start the project need to clone the repository first**
+
+```
+git clone https://github.com/MINJILEE-PURDUE/KSW_2022_Fall_Program.git
+```
 
 ### Raspberry pi 1 (For camera)
 
@@ -80,25 +86,31 @@ This program presents a new approach to the projectile mark detecting system. Th
 
 1. Install Python version 3.9.2
 
-2. clone the LoRa(pi1) code from Github.
+2. Go to SharpShooter file
 
-```linux
-git clone https://github.com/Purdue-K-SW-Capstone/SharpShooter-pi1
+```
+cd SharpShooter
 ```
 
-3. change working directory
+3. Go to Code
+
+```
+cd code
+```
+
+4. change working directory
 
 ```
 cd SharpShooter-pi1
 ```
 
-4. Install python dependencies
+5. Install python dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-5. Run
+6. Run
 
 ```
 python main.py
@@ -242,14 +254,13 @@ SharpShooter-Front/src/components/InfoModal.jsx
 
 1. Install node.js version 16.17.1
 
-
-2. go to sharpshooter folder
+2. Go to SharpShooter file
 
 ```
 cd SharpShooter
 ```
 
-3. change to sharpshooter code folder
+3. Go to Code
 
 ```
 cd code
@@ -278,7 +289,6 @@ npm start
 - Before setting this, You must finish Server setting first.
 
 1. Install python version 3.7.15
-
 
 2. change to sharpshooter folder
 
@@ -317,14 +327,13 @@ python main.py
 
 1. Install node.js version 16.17.1
 
-
-2. change to sharpshooter folder
+2. Go to SharpShooter file
 
 ```
 cd SharpShooter
 ```
 
-3. change to sharpshooter code folder
+3. Go to Code
 
 ```
 cd code
