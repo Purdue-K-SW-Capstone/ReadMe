@@ -14,7 +14,7 @@ Outdoor Long Range Ubiquitous Projectiles Tracking System Using P-MPLR and Compu
 | Jeongwon Moon    | Kyungpook Nat’l University | Dept. of Computer Science & Engineering      | bella7365@knu.ac.kr   | https://github.com/gaarden        |
 | Woojin Choi      | Sun Moon University        | Dept. of Computer Science & Engineering      | twinsno119@gmail.com  | https://github.com/woojin-choi518 |
 | Ethan O'Sullivan | Purdue University          | Dept. of Computer and Information Technology | ethanext17@gmail.com  | https://github.com/ethanext       |
-| Sophia Kim       | Purdue University          | Dept. of Computer and Information Technology | phia9130@gmail.com    | https://github.com/lee3155        |
+| Sophia Lee       | Purdue University          | Dept. of Computer and Information Technology | phia9130@gmail.com    | https://github.com/lee3155        |
 
 ---
 
