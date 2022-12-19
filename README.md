@@ -2,7 +2,7 @@
 
 ## Title
 
-Outdoor Long Range Ubiquitous Projectiles Tracking System Using LoRa and Computer Vision
+Outdoor Long Range Ubiquitous Projectiles Tracking System Using P-MPLR and Computer Vision
 
 ### Group Members
 
@@ -206,13 +206,19 @@ The access point works just like any other Wi-Fi router / access point.
 3. Using a compatible device, scan the QR code to automatically connect to the access point. The information dialog contains all of the information necessary for our access point.
    <img align="center" width="500" src="https://cdn.mos.cms.futurecdn.net/JGmzGHUJWDRaUBUy3kf5U6-1200-80.jpg.webp">
 
-- **Client IP Address setting**
-  - Go to SharpShooter-Front/src/components/InfoModal.jsx line 16 and SharpShooter-Front/src/components/StorageModal.jsx line 9 and SharpShooter-Front/src/pages/TargetPage.jsx
-
-  replace the code with IPv4 IP address shown in the picture (your access point) above instead of localhost.
+- **Client IP Address setting (necessary)**
+  - Go to SharpShooter-Front/src/components/InfoModal.jsx line 16 and SharpShooter-Front/src/components/StorageModal.jsx line 9 and SharpShooter-Front/src/pages/TargetPage.jsx line 236 replace the code with IPv4 IP address shown in the picture (your access point) above instead of localhost.
 
 ```
+ex)
   const client = new W3CWebSocket(`ws://localhost:3030`);
+  ->
+  const client = new W3CWebSocket(`ws://10.42.0.1:3030`);
+
+  ws.current = new WebSocket(`ws://localhost:3030`);
+  ->
+  ws.current = new WebSocket(`ws://10.42.0.1:3030`);
+
 ```
 
 SharpShooter-Front/src/components/InfoModal.jsx
