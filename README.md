@@ -220,7 +220,7 @@ The access point works just like any other Wi-Fi router / access point.
 **Server setting**
 
 - Server is made with node.js.
-- In server, There are many secret keys. so, If you want to set the server, Please ask us to get `.env`file.
+- In server, There are many secret keys. so we creat `.env`file and push that into github repository
 - `.env`file must be placed on root directory(SharpShooter-Server directory)
 
 1. Install node.js version 16.17.1
@@ -251,8 +251,6 @@ npm start
 
 **LoRa Setting**
 
-- In LoRa, There are many secret keys. so, If you want to set the LoRa, Please ask us to get `.env`file.
-- `.env`file must be placed on root directory(SharpShooter-pi2 directory)
 - Before setting this, You must finish Server setting first.
 
 1. Install python version 3.7.15
@@ -284,8 +282,6 @@ python main.py
 **Client server setting**
 
 - Client server is made with react.
-- In client server, There are many secret keys. so, If you want to set the client server, Please ask us to get `.env`file.
-- `.env`file must be placed on root directory(SharpShooter-Front directory)
 - Before setting this, You must finish Server setting first.
 
 1. Install node.js version 16.17.1
