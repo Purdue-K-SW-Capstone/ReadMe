@@ -206,7 +206,18 @@ The access point works just like any other Wi-Fi router / access point.
 3. Using a compatible device, scan the QR code to automatically connect to the access point. The information dialog contains all of the information necessary for our access point.
    <img align="center" width="500" src="https://cdn.mos.cms.futurecdn.net/JGmzGHUJWDRaUBUy3kf5U6-1200-80.jpg.webp">
 
-**LoRa Hat Setting**
+- **Client IP Address setting**
+  - Go to SharpShooter-Front/src/components/InfoModal.jsx line 16 and SharpShooter-Front/src/components/StorageModal.jsx line 9 and SharpShooter-Front/src/pages/TargetPage.jsx
+
+  replace the code with IPv4 IP address shown in the picture (your access point) above instead of localhost.
+
+```
+  const client = new W3CWebSocket(`ws://localhost:3030`);
+```
+
+SharpShooter-Front/src/components/InfoModal.jsx
+
+- **LoRa Hat Setting**
 
 1. Set the LoRa mode using jumpers
 
